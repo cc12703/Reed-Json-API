@@ -1,0 +1,40 @@
+{
+  "name": "reed-json-api",
+  "version": "1.0.0",
+  "description": "koa middleware for josn-mock rest api",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HansHuang/Reed-Json-API.git"
+  },
+  "keywords": [
+    "json",
+    "mock",
+    "rest",
+    "api",
+    "koa",
+    "middleware"
+  ],
+  "author": "HansHuang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HansHuang/Reed-Json-API/issues"
+  },
+  "homepage": "https://github.com/HansHuang/Reed-Json-API#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "dummy-json": "^2.0.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "koa": "^2.10.0",
+    "mocha": "^6.2.1",
+    "supertest": "^4.0.2"
+  }
+}
