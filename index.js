@@ -5,9 +5,9 @@ const fs = require('fs'),
 
 //TODO: watch file changed for json template
 
-module.exports = ({ urlPrefix, filePath }) => {
+module.exports = ({ urlPrefix, filePath, dummyOptions }) => {
     const template = fs.readFileSync(filePath).toString(),
-        jsonResult = dummyJson.parse(template),
+        jsonResult = dummyJson.parse(template, dummyOptions),
         jsonData = JSON.parse(jsonResult),
         router = new Router()
     
