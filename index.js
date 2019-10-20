@@ -1,7 +1,7 @@
 const fs = require('fs'),
     Router = require('koa-router'),
     dummyJson = require('dummy-json'),
-    { setBadRequest } = require('./lib/response')
+    { setBadRequest } = require('./lib/util')
 
 //TODO: watch file changed for json template
 
@@ -9,7 +9,9 @@ module.exports = ({ urlPrefix, filePath }) => {
     const template = fs.readFileSync(filePath).toString(),
         jsonResult = dummyJson.parse(template),
         jsonData = JSON.parse(jsonResult),
-        router = new Router({ prefix: urlPrefix || '' })
+        router = new Router()
+    
+    urlPrefix && router.prefix(urlPrefix)
 
     router.get('/:name/:id?', require('./lib/get')(jsonData))
         .delete('/:name/:id?', require('./lib/delete')(jsonData))
