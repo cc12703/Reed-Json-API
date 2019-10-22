@@ -3,7 +3,7 @@ const Koa = require('koa'),
     koaBody = require('koa-body'),
     api = require('../index')
 
-process.env.NODE_ENV = 'develop'
+process.env.NODE_ENV = 'test'
 
 exports.startServer = function (port) {
     const app = new Koa(),
