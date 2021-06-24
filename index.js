@@ -1,7 +1,7 @@
 const fs = require('fs'),
     Router = require('koa-router'),
     path = require('path'),
-    dummyJson = require('dummy-json'),
+    dummyJson = require('@cc12703m/dummy-json'),
     { setBadRequest } = require('./lib/util')
 
 //TODO: watch file changed for json template
