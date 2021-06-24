@@ -29,7 +29,7 @@
   "homepage": "https://github.com/HansHuang/Reed-Json-API#readme",
   "dependencies": {
     "debug": "^4.1.1",
-    "dummy-json": "^2.0.0",
+    "@cc12703m/dummy-json": "^3.0.0",
     "koa-router": "^7.4.0"
   },
   "devDependencies": {
